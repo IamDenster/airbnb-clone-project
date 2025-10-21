@@ -24,3 +24,19 @@ This project is a full-stack clone of the popular accommodation booking platform
 3. Maintain visual consistency
 4. Ensure fast loading times
 5. Prioritize mobile responsiveness
+
+# Figma Design Specifications
+# Color Styles:
+Primary: #FF5A5F
+Secondary: #008489
+Background: #FFFFFF
+Text: #222222
+Secondary Text: #717171
+
+# Typography:
+Primary Font: Circular, Medium (500), 16px
+Headings: Circular, Bold (700), 24px-32px
+Secondary Text: Circular, Book (400), 14px
+
+# Importance of Identifying Design Properties of a Mock Up Design
+Identifying the design properties of a mock-up is essential because it ensures clear communication and alignment between designers, developers, and stakeholders. By defining elements such as layout, typography, colors, spacing, and visual hierarchy, everyone involved gains a shared understanding of how the final product should look and function. This clarity helps developers accurately translate the mock-up into a working design, maintains consistency across pages and platforms, strengthens branding, and enhances the user experience. It also allows for precise feedback, early detection of issues, and reduces time and cost by minimizing revisions during development. Overall, recognizing design properties in a mock-up forms the foundation for an efficient workflow and a high-quality final product.
