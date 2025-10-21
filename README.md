@@ -17,3 +17,10 @@ This project is a full-stack clone of the popular accommodation booking platform
 2. Detailed property viewing
 3. Secure checkout process
 4. User authentication
+
+# UI/UX Design Planning
+1. Design Goals
+2. Create intuitive booking flow
+3. Maintain visual consistency
+4. Ensure fast loading times
+5. Prioritize mobile responsiveness
