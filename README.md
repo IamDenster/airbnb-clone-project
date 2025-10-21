@@ -51,3 +51,22 @@ Identifying the design properties of a mock-up is essential because it ensures c
 6. DevOps: Engineers	Manages deployment, CI/CD pipeline, server infrastructure
 7. Product Owner: Defines requirements, prioritizes features, represents stakeholders
 8. Scrum Master: Facilitates agile processes, removes blockers, organizes meetings
+
+# UI Component Patterns
+Navbar: The navigation bar serves as the primary interaction point for users to explore the platform. It includes:
+1. Logo – Positioned prominently to represent the brand and provide a quick return to the homepage.
+2. Search Bar – Allows users to search for properties quickly and efficiently.
+3. User Navigation – Links or icons for profile access, login/signup, notifications, or bookings.
+4. Responsive Menu – Adapts to different screen sizes by transforming into a hamburger menu on smaller devices to maintain usability on mobile.
+
+Property Card: This reusable component displays key property details in a compact format, ideal for listings and search results. It includes:
+1. Property Image – A high-quality visual preview of the property.
+2. Basic Details – Displays essential information such as price, location, and rating.
+3. Favorite Button – Enables users to save or bookmark properties for future reference.
+4. Responsive Layout – Ensures that the card adapts to various screen sizes while maintaining readability and design integrity.
+
+Footer: The footer provides supplementary information and useful links at the bottom of the page. It includes:
+1. Site Links – Quick navigation to key pages like Home, About, Contact, or FAQs.
+2. Company Information – Basic details about MeChampion or the business entity.
+3. Social Media Links – Icons or links to official social platforms for broader engagement.
+4. Copyright Information – Legal and ownership details regarding website content.
