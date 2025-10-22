@@ -172,10 +172,9 @@ Security is a core priority for this project to protect user data, maintain plat
 # CI/CD Pipeline
 CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying the application. With Continuous Integration, every code change pushed to the repository is automatically tested and validated, ensuring bugs are detected early. Continuous Deployment then automates the release of approved changes to staging or production environments, reducing human error and speeding up delivery. This is important for the project because it ensures reliable updates, reduces deployment downtime, improves team collaboration, and maintains high code quality as the platform scales. 
 
-1. Tools That Can Be Used are:
-            1. GitHub Actions – Automates testing, builds, and deployment workflows directly from the repository.
-            2. Docker – Containerizes the application to ensure consistent behavior across development, testing, and production environments.
-            3. Docker Compose / Kubernetes – For managing multi-service deployments.
-            4. Jenkins, GitLab CI, or CircleCI – Alternatives for building more advanced CI/CD workflows.
-            5. AWS, Azure, or DigitalOcean – For cloud-based deployment and hosting.
+1. GitHub Actions – Automates testing, builds, and deployment workflows directly from the repository.
+2. Docker – Containerizes the application to ensure consistent behavior across development, testing, and production environments.
+3. Docker Compose / Kubernetes – For managing multi-service deployments.
+4. Jenkins, GitLab CI, or CircleCI – Alternatives for building more advanced CI/CD workflows.
+5. AWS, Azure, or DigitalOcean – For cloud-based deployment and hosting.
 
