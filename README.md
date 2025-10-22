@@ -157,3 +157,25 @@ Footer: The footer provides supplementary information and useful links at the bo
         2. A Review is for one Property.
         3. A Property can have many Reviews.
         4. A User can write multiple Reviews.
+
+# Feature Breakdown
+1. User Management: Implement a secure system for user registration, authentication, and profile management.
+2. Property Management: Develop features for property listing creation, updates, and retrieval.
+3. Booking System: Create a booking mechanism for users to reserve properties and manage booking details.
+4. Payment Processing: Integrate a payment system to handle transactions and record payment details.
+5. Review System: Allow users to leave reviews and ratings for properties.
+6. Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
+
+# API Security
+Security is a core priority for this project to protect user data, maintain platform trust, and ensure safe transactions. User authentication is enforced using secure password hashing and token-based mechanisms like JWT, with optional multi-factor authentication for added protection. Authorization is implemented using role-based access control (RBAC), ensuring users only perform actions permitted to their roles—such as property owners managing listings and guests making bookings. API endpoints are protected with rate limiting to prevent abuse, brute-force login attempts, and denial-of-service attacks. All sensitive data is encrypted—HTTPS/TLS secures data in transit, while passwords and payment information are encrypted at rest. Payments are processed through PCI-DSS compliant gateways using tokenization, ensuring financial information is never stored directly on the server. To prevent vulnerabilities such as SQL injection, XSS, and CSRF, all input is validated and sanitized using Django REST Framework and native ORM protections. Continuous logging and monitoring are enabled to track user activity, detect anomalies, and quickly respond to security incidents. These combined measures safeguard user accounts, secure property and booking data, protect payment transactions, and preserve the platform’s reliability and reputation.
+
+# CI/CD Pipeline
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying the application. With Continuous Integration, every code change pushed to the repository is automatically tested and validated, ensuring bugs are detected early. Continuous Deployment then automates the release of approved changes to staging or production environments, reducing human error and speeding up delivery. This is important for the project because it ensures reliable updates, reduces deployment downtime, improves team collaboration, and maintains high code quality as the platform scales. 
+
+1. Tools That Can Be Used are:
+            1. GitHub Actions – Automates testing, builds, and deployment workflows directly from the repository.
+            2. Docker – Containerizes the application to ensure consistent behavior across development, testing, and production environments.
+            3. Docker Compose / Kubernetes – For managing multi-service deployments.
+            4. Jenkins, GitLab CI, or CircleCI – Alternatives for building more advanced CI/CD workflows.
+            5. AWS, Azure, or DigitalOcean – For cloud-based deployment and hosting.
+
