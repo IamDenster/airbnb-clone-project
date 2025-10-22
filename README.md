@@ -70,3 +70,9 @@ Footer: The footer provides supplementary information and useful links at the bo
 2. Company Information – Basic details about MeChampion or the business entity.
 3. Social Media Links – Icons or links to official social platforms for broader engagement.
 4. Copyright Information – Legal and ownership details regarding website content.
+
+# Team Roles
+1. Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.
+2. Database Administrator: Manages database design, indexing, and optimizations.
+3. DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.
+4. QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
