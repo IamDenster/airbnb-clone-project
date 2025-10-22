@@ -86,3 +86,74 @@ Footer: The footer provides supplementary information and useful links at the bo
 6. Redis: Used for caching and session management.
 7. Docker: Containerization tool for consistent development and deployment environments.
 8. CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+# Database Design
+1. User
+    1. Key Fields
+       1. user_id (Primary Key)
+       2. name or full_name
+       3. email (unique)
+       4. password_hash / authentication_credentials
+       5. role (e.g., Admin, Host, Guest)
+
+    2. Relationships:
+       1. A User can list multiple Properties (if the user is a host).
+       2. A User can make multiple Bookings.
+       3. A User can post multiple Reviews.
+       4. A User makes Payments for Bookings.
+
+2. Property
+    1. Key Fields
+        1. property_id (Primary Key)
+        2. owner_id (Foreign Key → User)
+        3. title or name
+        4. location (address, city, etc.)
+        5. price_per_night or rental_rate
+
+    2. Relationships:
+        1. A Property belongs to one User (owner/host).
+        2. A Property can have multiple Bookings.
+        3. A Property can have multiple Reviews.
+
+3. Booking
+    1. Key Fields
+        1. booking_id (Primary Key)
+        2. user_id (Foreign Key → User)
+        3. property_id (Foreign Key → Property)
+        4. check_in_date
+        5. check_out_date
+        6. status (e.g., pending, confirmed, cancelled)
+
+    2. Relationships:
+        1. A Booking is made by one User.
+        2. A Booking belongs to one Property.
+        3. A Booking can have one Payment.
+
+4. Payment
+    1. Key Fields
+        1. payment_id (Primary Key)
+        2. booking_id (Foreign Key → Booking)
+        3. amount
+        4. payment_method (card, bank transfer, wallet, etc.)
+        5. payment_status (successful, pending, failed)
+        6. payment_date
+
+    2. Relationships:
+        1. A Payment is linked to one Booking.
+        2. A Booking typically has one Payment record (or multiple if split payments are allowed).
+        3. A Payment is indirectly linked to a User through the Booking.
+
+5. Review
+    1. Key Fields
+        1. review_id (Primary Key)
+        2. user_id (Foreign Key → User)
+        3. property_id (Foreign Key → Property)
+        4. rating (1–5 stars)
+        5. comment
+        6. created_at
+
+    2. Relationships:
+        1. A Review is written by one User.
+        2. A Review is for one Property.
+        3. A Property can have many Reviews.
+        4. A User can write multiple Reviews.
